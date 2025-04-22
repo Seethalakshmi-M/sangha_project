@@ -1,0 +1,93 @@
+.form-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+    padding-top: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .label {
+    font-weight: 500;
+    min-width: 180px; /* Keeps labels aligned */
+    white-space: nowrap;
+    text-align: right;
+  }
+  
+  .input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 1rem 2rem;
+  }
+  
+  .input-grid > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .input-underline {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    padding: 6px 4px;
+    font-size: 1rem;
+    width: 100%;
+    color: #000;
+  }
+  
+  .input-underline:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+  }
+  
+  .submit-button {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .submit-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .custom-date,
+  .custom-time {
+    font-family: 'Arial', sans-serif;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .custom-date::placeholder,
+  .custom-time::placeholder {
+    color: #888;
+    letter-spacing: 1px;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(0.5);
+  }
+  
